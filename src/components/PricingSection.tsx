@@ -62,7 +62,7 @@ const PricingSection = () => {
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs uppercase tracking-wider py-1 px-3 rounded-full">
               Προτεινόμενο
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">Πλήρης Πακέτο Ιστοσελίδας</h3>
+            <h3 className="text-xl font-bold mb-2 text-center">Πλήρες Πακέτο Ιστοσελίδας</h3>
             <div className="text-center mb-6">
               <span className="text-4xl font-bold">€1,499</span>
               <span className="text-gray-600 ml-2">εφάπαξ</span>
