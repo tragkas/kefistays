@@ -40,61 +40,60 @@
     cookieTypes: [
       {
         id: "necessary",
-        name: "Necessary",
-        description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+        name: "Απαραίτητα",
+        description: "<p>Αυτά τα cookies είναι απαραίτητα για τη σωστή λειτουργία του ιστότοπου και δεν μπορούν να απενεργοποιηθούν. Βοηθούν σε λειτουργίες όπως η σύνδεση και οι προτιμήσεις απορρήτου.</p>",
         required: true,
         onAccept: function() {
-          console.log('Necessary cookies accepted.');
+          console.log('Απαραίτητα cookies αποδεκτά.');
         }
       },
       {
         id: "analytical",
-        name: "Analytical",
-        description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
-        required: false,  // Must be false so user can opt in or out
+        name: "Αναλυτικά",
+        description: "<p>Αυτά τα cookies μας βοηθούν να βελτιώσουμε τον ιστότοπο παρακολουθώντας ποιες σελίδες είναι πιο δημοφιλείς και πώς οι επισκέπτες κινούνται στον ιστότοπο.</p>",
+        required: false,
         onAccept: function() {
-          console.log('Analytical cookies accepted, loading Microsoft Clarity.');
+          console.log('Αναλυτικά cookies αποδεκτά, φόρτωση Microsoft Clarity.');
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/" + i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "sc5e3w2es7"); // Replace with your Clarity ID if different
+          })(window, document, "clarity", "script", "sc5e3w2es7");
         },
         onReject: function() {
-          console.log('Analytical cookies rejected, Microsoft Clarity not loaded.');
-          // Optional: clear Clarity cookies on rejection
+          console.log('Αναλυτικά cookies απορρίφθηκαν, η Microsoft Clarity δεν φορτώθηκε.');
           document.cookie = '_clck=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
           document.cookie = '_clsk=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
         }
       },
       {
         id: "advertising",
-        name: "Advertising",
-        description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+        name: "Διαφημιστικά",
+        description: "<p>Αυτά τα cookies παρέχουν επιπλέον λειτουργίες και εξατομίκευση για να βελτιώσουν την εμπειρία σας. Μπορεί να οριστούν από εμάς ή από συνεργάτες των οποίων τις υπηρεσίες χρησιμοποιούμε.</p>",
         required: false,
         onAccept: function() {
-          // Google Analytics consent update removed
+          // Η ενημέρωση συγκατάθεσης του Google Analytics καταργήθηκε
         },
         onReject: function() {
-          // Google Analytics consent update removed
+          // Η ενημέρωση συγκατάθεσης του Google Analytics καταργήθηκε
         }
       }
     ],
     text: {
       banner: {
-        description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://docs.google.com/document/d/1EOcDkXdVOVe7gV4M0TbGLj6B7MSDx6nDEVfZvIqxiQw/edit?usp=sharing\" target=\"_blank\">Cookie Policy.</a></p>",
-        acceptAllButtonText: "Accept all",
-        acceptAllButtonAccessibleLabel: "Accept all cookies",
-        rejectNonEssentialButtonText: "Reject non-essential",
-        rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
-        preferencesButtonText: "Preferences",
-        preferencesButtonAccessibleLabel: "Toggle preferences"
+        description: "<p>Χρησιμοποιούμε cookies στον ιστότοπό μας για να βελτιώσουμε την εμπειρία σας, να παρέχουμε εξατομικευμένο περιεχόμενο και να αναλύσουμε την επισκεψιμότητά μας. <a href=\"https://docs.google.com/document/d/1EOcDkXdVOVe7gV4M0TbGLj6B7MSDx6nDEVfZvIqxiQw/edit?usp=sharing\" target=\"_blank\">Πολιτική Απορρήτου.</a></p>",
+        acceptAllButtonText: "Αποδοχή όλων",
+        acceptAllButtonAccessibleLabel: "Αποδοχή όλων των cookies",
+        rejectNonEssentialButtonText: "Απόρριψη μη απαραίτητων",
+        rejectNonEssentialButtonAccessibleLabel: "Απόρριψη μη απαραίτητων",
+        preferencesButtonText: "Προτιμήσεις",
+        preferencesButtonAccessibleLabel: "Εναλλαγή προτιμήσεων"
       },
       preferences: {
-        title: "Customize your cookie preferences",
-        description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
-        creditLinkText: "Get this banner for free",
-        creditLinkAccessibleLabel: "Get this banner for free"
+        title: "Προσαρμόστε τις προτιμήσεις σας για τα cookies",
+        description: "<p>Σεβόμαστε το δικαίωμά σας στην ιδιωτικότητα. Μπορείτε να επιλέξετε να μην επιτρέψετε ορισμένους τύπους cookies. Οι προτιμήσεις σας θα ισχύουν σε όλο τον ιστότοπό μας.</p>",
+        creditLinkText: "Αποκτήστε αυτό το banner δωρεάν",
+        creditLinkAccessibleLabel: "Αποκτήστε αυτό το banner δωρεάν"
       }
     },
     position: {
@@ -102,6 +101,7 @@
     }
   });
 </script>
+
 
 
   </head>
