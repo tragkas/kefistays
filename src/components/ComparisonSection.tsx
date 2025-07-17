@@ -19,11 +19,23 @@ const ComparisonSection = () => {
             <h3 className="text-xl font-bold mb-6 text-center pb-4 border-b border-gray-100">Μέσος Οικοδεσπότης</h3>
             
             <ul className="space-y-4">
+                <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mr-3 mt-0.5">
+                  <X className="text-red-500" size={14} />
+                </span>
+                <span className="text-gray-700">Σελίδα με βάση την πολιτική της ΑΑΔΕ.</span>
+              </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mr-3 mt-0.5">
                   <X className="text-red-500" size={14} />
                 </span>
                 <span className="text-gray-700">Δεν έχει δική του ιστοσελίδα – βασίζεται αποκλειστικά στην Airbnb.</span>
+              </li>
+                  <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mr-3 mt-0.5">
+                  <X className="text-red-500" size={14} />
+                </span>
+                <span className="text-gray-700">Συμμόρφωση με το GDPR, ή Γενικό Κανονισμό για την Προστασία των Δεδομένων.</span>
               </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mr-3 mt-0.5">
@@ -72,17 +84,29 @@ const ComparisonSection = () => {
             <h3 className="text-xl font-bold mb-6 text-center pb-4 border-b border-gray-100">Οικοδεσπότης με Στρατηγική</h3>
             
             <ul className="space-y-4">
+                <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                  <Check className="text-green-500" size={14} />
+                </span>
+                <span className="text-gray-700">Σελίδα με βάση την πολιτική της ΑΑΔΕ.</span>
+              </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
                   <Check className="text-green-500" size={14} />
                 </span>
                 <span className="text-gray-700">Δική σου ιστοσελίδα με το brand και τη στρατηγική σου.</span>
               </li>
+                <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
+                  <Check className="text-green-500" size={14} />
+                </span>
+                <span className="text-gray-700">Συμμόρφωση με το GDPR, ή Γενικό Κανονισμό για την Προστασία των Δεδομένων.</span>
+              </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
                   <Check className="text-green-500" size={14} />
                 </span>
-                <span className="text-gray-700">SEO για να σε βρίσκουν πελάτες ακόμα κι εκτός Airbnb.</span>
+                <span className="text-gray-700">On page SEO για να σε βρίσκουν πελάτες ακόμα κι εκτός Airbnb.</span>
               </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
