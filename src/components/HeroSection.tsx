@@ -10,10 +10,10 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-5xl md:text-6xl lg:text-7xl text-blue-700 font-bold mb-6 leading-tight">
-              Αύξησε τις Κρατήσεις σου στο Airbnb
+              Αύξησε τις Κρατήσεις <br></br>σου στο Airbnb
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Ξεχώρισε από τον ανταγωνισμό με εξατομικευμένη στρατηγική branding και επαγγελματικό website.
+              Ξεχώρισε από τον ανταγωνισμό με επαγγελματικό website.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">

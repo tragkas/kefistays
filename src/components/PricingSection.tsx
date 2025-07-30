@@ -19,7 +19,7 @@ const PricingSection = () => {
           <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100">
             <h3 className="text-xl font-bold mb-2 text-center">Βασικό Πακέτο Ιστοσελίδας</h3>
             <div className="text-center mb-6">
-              <span className="text-4xl font-bold">€999</span>
+              <span className="text-4xl font-bold">€799</span>
               <span className="text-gray-600 ml-2">εφάπαξ</span>
             </div>
             
@@ -28,9 +28,13 @@ const PricingSection = () => {
                 <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
                 <span>Επαγγελματική Σελίδα (1 Page)</span>
               </li>
+                <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Ακολουθηθεί την πολιτική της ΑΑΔΕ</span>
+              </li>
               <li className="flex items-start">
                 <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
-                <span>Επαγγελματικό Link-in-Bio</span>
+                <span>Συμμόρφωση με το GDPR</span>
               </li>
               <li className="flex items-start">
                 <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
@@ -43,10 +47,6 @@ const PricingSection = () => {
                <li className="flex items-start">
                 <X className="text-gray-500 mr-2 flex-shrink-0 mt-1" size={18} />
                 <span>Δημιουργία οδηγού PDF</span>
-              </li>
-              <li className="flex items-start">
-                <X className="text-gray-500 mr-2 flex-shrink-0 mt-1" size={18} />
-                <span>Στρατηγική Instagram</span>
               </li>
             </ul>
             
@@ -64,7 +64,7 @@ const PricingSection = () => {
             </div>
             <h3 className="text-xl font-bold mb-2 text-center">Πλήρες Πακέτο Ιστοσελίδας</h3>
             <div className="text-center mb-6">
-              <span className="text-4xl font-bold">€1,499</span>
+              <span className="text-4xl font-bold">€1,299</span>
               <span className="text-gray-600 ml-2">εφάπαξ</span>
             </div>
             
@@ -75,7 +75,11 @@ const PricingSection = () => {
               </li>
               <li className="flex items-start">
                 <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
-                <span>Επαγγελματικό Link-in-Bio</span>
+                <span>Ακολουθηθεί την πολιτική της ΑΑΔΕ</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Συμμόρφωση με το GDPR</span>
               </li>
               <li className="flex items-start">
                 <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
@@ -88,10 +92,6 @@ const PricingSection = () => {
                 <li className="flex items-start">
                 <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
                 <span>Δημιουργία οδηγού PDF</span>
-              </li>
-              <li className="flex items-start">
-                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
-                <span>Στρατηγική Instagram</span>
               </li>
             </ul>
             

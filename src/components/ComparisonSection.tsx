@@ -9,7 +9,7 @@ const ComparisonSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Γιατί χρειάζεσαι μια ιστοσελίδα;</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Δες τη διαφορά ανάμεσα σε έναν μέσο οικοδεσπότη και έναν οικοδεσπότη με ολοκληρωμένη στρατηγική
+            Δες τη διαφορά ανάμεσα σε έναν μέσο οικοδεσπότη και έναν οικοδεσπότη με ολοκληρωμένη στρατηγική.
           </p>
         </div>
         
@@ -48,12 +48,6 @@ const ComparisonSection = () => {
                   <X className="text-red-500" size={14} />
                 </span>
                 <span className="text-gray-700">Δεν υπάρχει στρατηγική – απλά περιμένει κρατήσεις.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mr-3 mt-0.5">
-                  <X className="text-red-500" size={14} />
-                </span>
-                <span className="text-gray-700">Αδιάφορη παρουσία στα social ή καθόλου παρουσία.</span>
               </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-red-100 rounded-full mr-3 mt-0.5">
@@ -118,19 +112,13 @@ const ComparisonSection = () => {
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
                   <Check className="text-green-500" size={14} />
                 </span>
-                <span className="text-gray-700">Συντονισμένη παρουσία στο Instagram.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
-                  <Check className="text-green-500" size={14} />
-                </span>
                 <span className="text-gray-700">Επαγγελματικές εικόνες και περιεχόμενο που πουλάει εμπειρία.</span>
               </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
                   <Check className="text-green-500" size={14} />
                 </span>
-                <span className="text-gray-700">Το Airbnb σου γίνεται ξεχωριστό, με ξεκάθαρη ταυτότητα.</span>
+                <span className="text-gray-700">Ξεχωριστό, με ξεκάθαρη ταυτότητα.</span>
               </li>
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-green-100 rounded-full mr-3 mt-0.5">
