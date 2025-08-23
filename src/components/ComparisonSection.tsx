@@ -70,12 +70,6 @@ const ComparisonSection = () => {
                 </div>
               ))}
             </div>
-
-            <div className="mt-8">
-              <Button className="w-full bg-primary hover:bg-primary-hover text-white font-semibold py-3">
-                Επικοινώνησε Μαζί μας →
-              </Button>
-            </div>
           </div>
         </div>
       </div>
