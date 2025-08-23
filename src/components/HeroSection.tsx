@@ -60,12 +60,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <Button 
-          size="lg" 
-          className="bg-primary hover:bg-primary-hover text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg"
-        >
-          Δες τα Πακέτα μας <ArrowRight className="ml-2 w-5 h-5" />
-        </Button>
+            <a href="#pricing">
+              <Button className="bg-primary text-white hover:bg-primary/90 text-lg px-6 py-6 h-auto">
+                Δες τα Πακέτα μας
+                <ArrowRight className="ml-2" size={18} />
+              </Button>
+            </a>
       </div>
     </section>
   );
