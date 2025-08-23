@@ -17,12 +17,12 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Αυξησε τις Κρατήσεις<br />
-          <span className="text-primary">σου στο Airbnb.........</span>
+          Αύξησε τις Κρατήσεις<br />
+          <span className="text-primary">σου στο Airbnb</span>
         </h1>
         
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-          Ξεκίνησε από τον ανταγωνισμό με στοχευμένο website.
+          Ξεχώρισε από τον ανταγωνισμό με επαγγελματικό website.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
@@ -30,9 +30,9 @@ const HeroSection = () => {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
               <Calendar className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Αυξηση Κρατήσεων</h3>
+            <h3 className="text-lg font-semibold mb-2">Αύξηση Κρατήσεων</h3>
             <p className="text-gray-600 text-sm text-center">
-              Αυξησε τα κέρδη σου με 
+              Αύξησε τις κρατήσεις σου με 
               στρατηγική προσέγγιση
             </p>
           </div>
@@ -43,8 +43,8 @@ const HeroSection = () => {
             </div>
             <h3 className="text-lg font-semibold mb-2">Επαγγελματικό Website</h3>
             <p className="text-gray-600 text-sm text-center">
-              Κάνεις την διαφορά με μόδα online 
-              παρουσία
+              Απόκτησε τον δικό σου 
+              χώρο online
             </p>
           </div>
 
@@ -54,8 +54,8 @@ const HeroSection = () => {
             </div>
             <h3 className="text-lg font-semibold mb-2">Ξεχώρισε στην Αγορά</h3>
             <p className="text-gray-600 text-sm text-center">
-              Οπως και επαγγελματικό brand που 
-              θα σε κάνει να ξεχωρίσεις
+              Χτίσε ένα επαγγελματικό brand που 
+              θα σε κάνει να ξεχωρίζεις
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
           size="lg" 
           className="bg-primary hover:bg-primary-hover text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg"
         >
-          Δες το Πακέτο μας <ArrowRight className="ml-2 w-5 h-5" />
+          Δες τα Πακέτα μας <ArrowRight className="ml-2 w-5 h-5" />
         </Button>
       </div>
     </section>

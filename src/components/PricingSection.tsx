@@ -20,17 +20,17 @@ const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Βασικό Πακέτο Ιστοσελίδας</h3>
               <div className="text-4xl font-bold text-gray-900 mb-1">€799</div>
-              <div className="text-gray-500">/μήνας</div>
+              <div className="text-gray-500">εφάπαξ</div>
             </div>
 
             <div className="space-y-4 mb-8">
               {[
-                "Επαγγελματική Σελίδα (1 Σελίδα)",
-                "Αποθήκευση της ακίνητη στις ΑΛΛΕ",
-                "Συμμόρφωση με τα GDPR",
-                "Τοπικό βελτίωση SEO",
-                "Ανάλυση στοιχεία",
-                "Αυτοματική αθέματα PDF"
+                "Επαγγελματική Σελίδα (1 Page)",
+                "Ακολουθηθεί την πολιτική της ΑΑΔΕ",
+                "Συμμόρφωση με το GDPR",
+                "Τοπική ρύθμιση SEO",
+                "Αναλυτικά στοιχεία",
+                "Δημιουργία οδηγού PDF"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
@@ -58,17 +58,17 @@ const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Πλήρες Πακέτο Ιστοσελίδας</h3>
               <div className="text-4xl font-bold text-gray-900 mb-1">€1,299</div>
-              <div className="text-gray-500">/μήνας</div>
+              <div className="text-gray-500">εφάπαξ</div>
             </div>
 
             <div className="space-y-4 mb-8">
               {[
-                "Επαγγελματική Σελίδα (5 Σελίδες)",
-                "Αυτή αυθέντηση την ακίνητη στις ΑΛΛΕ",
-                "Συμπλήρωση με τα GDPR",
-                "Τοπικό βελτίωση SEO",
-                "Ανάλυση στοιχεία",
-                "Αυτοματική αθέματα PDF"
+                "Επαγγελματική Σελίδα (5 Pages)",
+                "Ακολουθηθεί την πολιτική της ΑΑΔΕ",
+                "Συμμόρφωση με το GDPR",
+                "Τοπική ρύθμιση SEO",
+                "Αναλυτικά στοιχεία",
+                "Δημιουργία οδηγού PDF"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
@@ -78,7 +78,7 @@ const PricingSection = () => {
             </div>
 
             <Button className="w-full bg-primary hover:bg-primary-hover text-white font-semibold py-3">
-              Επικοινωνία ΔΩΔ μας →
+              Επικοινώνησε Μαζί μας →
             </Button>
           </div>
         </div>
