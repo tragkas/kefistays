@@ -1,0 +1,164 @@
+import { useEffect } from 'react';
+
+interface SEOHeadProps {
+  title: string;
+  description: string;
+  keywords?: string;
+  canonical?: string;
+  ogImage?: string;
+  article?: {
+    publishedTime: string;
+    modifiedTime?: string;
+    author: string;
+    tags: string[];
+  };
+}
+
+const SEOHead = ({ 
+  title, 
+  description, 
+  keywords, 
+  canonical, 
+  ogImage = "/og-default.png",
+  article 
+}: SEOHeadProps) => {
+  const fullTitle = `${title} | Kefistays - Διαχείριση Airbnb`;
+  
+  useEffect(() => {
+    // Set document title
+    document.title = fullTitle;
+    
+    // Set meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute('content', description);
+
+    // Set keywords if provided
+    if (keywords) {
+      let metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (!metaKeywords) {
+        metaKeywords = document.createElement('meta');
+        metaKeywords.setAttribute('name', 'keywords');
+        document.head.appendChild(metaKeywords);
+      }
+      metaKeywords.setAttribute('content', keywords);
+    }
+
+    // Set canonical URL
+    if (canonical) {
+      let linkCanonical = document.querySelector('link[rel="canonical"]');
+      if (!linkCanonical) {
+        linkCanonical = document.createElement('link');
+        linkCanonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(linkCanonical);
+      }
+      linkCanonical.setAttribute('href', canonical);
+    }
+
+    // Open Graph meta tags
+    const ogTags = [
+      { property: 'og:title', content: fullTitle },
+      { property: 'og:description', content: description },
+      { property: 'og:type', content: article ? 'article' : 'website' },
+      { property: 'og:image', content: ogImage },
+      { property: 'og:site_name', content: 'Kefistays' }
+    ];
+
+    ogTags.forEach(({ property, content }) => {
+      let metaTag = document.querySelector(`meta[property="${property}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', property);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.setAttribute('content', content);
+    });
+
+    // Twitter Card meta tags
+    const twitterTags = [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: fullTitle },
+      { name: 'twitter:description', content: description },
+      { name: 'twitter:image', content: ogImage }
+    ];
+
+    twitterTags.forEach(({ name, content }) => {
+      let metaTag = document.querySelector(`meta[name="${name}"]`);
+      if (!metaTag) {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('name', name);
+        document.head.appendChild(metaTag);
+      }
+      metaTag.setAttribute('content', content);
+    });
+
+    // Article specific meta tags
+    if (article) {
+      const articleTags = [
+        { property: 'article:published_time', content: article.publishedTime },
+        { property: 'article:author', content: article.author }
+      ];
+
+      if (article.modifiedTime) {
+        articleTags.push({ property: 'article:modified_time', content: article.modifiedTime });
+      }
+
+      article.tags.forEach(tag => {
+        articleTags.push({ property: 'article:tag', content: tag });
+      });
+
+      articleTags.forEach(({ property, content }) => {
+        const metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', property);
+        metaTag.setAttribute('content', content);
+        document.head.appendChild(metaTag);
+      });
+    }
+
+    // JSON-LD structured data
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": article ? "Article" : "WebSite",
+      "name": fullTitle,
+      "description": description,
+      "url": canonical || window.location.href,
+      "image": ogImage,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kefistays",
+        "url": "https://kefistays.com"
+      }
+    };
+
+    if (article) {
+      Object.assign(structuredData, {
+        "headline": title,
+        "datePublished": article.publishedTime,
+        "dateModified": article.modifiedTime || article.publishedTime,
+        "author": {
+          "@type": "Person",
+          "name": article.author
+        },
+        "keywords": article.tags.join(", ")
+      });
+    }
+
+    let structuredDataScript = document.querySelector('#structured-data');
+    if (!structuredDataScript) {
+      structuredDataScript = document.createElement('script');
+      structuredDataScript.setAttribute('type', 'application/ld+json');
+      structuredDataScript.setAttribute('id', 'structured-data');
+      document.head.appendChild(structuredDataScript);
+    }
+    structuredDataScript.textContent = JSON.stringify(structuredData);
+
+  }, [title, description, keywords, canonical, ogImage, article, fullTitle]);
+
+  return null;
+};
+
+export default SEOHead;
