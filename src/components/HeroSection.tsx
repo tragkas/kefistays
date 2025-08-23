@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           Αυξησε τις Κρατήσεις<br />
-          <span className="text-primary">σου στο Airbnb</span>
+          <span className="text-primary">σου στο Airbnb.........</span>
         </h1>
         
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
