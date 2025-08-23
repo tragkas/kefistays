@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import ProcessSection from "@/components/ProcessSection";
 import PricingSection from "@/components/PricingSection";
+import ContactSection from "@/components/ContactSection";
 import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
           <ComparisonSection />
           <ProcessSection />
           <PricingSection />
+          <ContactSection />
         </main>
         <Footer />
       </div>
