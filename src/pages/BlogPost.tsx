@@ -143,6 +143,22 @@ const BlogPost = () => {
           return <h2 key={index} className="text-2xl font-bold text-gray-900 mt-6 mb-3">{line.substring(3)}</h2>;
         }
         
+        // Images
+        const imageMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
+        if (imageMatch) {
+          const [, altText, imageUrl] = imageMatch;
+          return (
+            <div key={index} className="my-8">
+              <img 
+                src={imageUrl}
+                alt={altText}
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+          );
+        }
+        
         // Bold text
         const boldText = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         
