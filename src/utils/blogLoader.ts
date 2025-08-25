@@ -16,7 +16,8 @@ const getAvailableSlugs = (): string[] => {
   // In a real implementation, you might read from a manifest file
   // or use a build-time generated list of available posts
   return [
-    '10-stratigikes-afxisi-kratiseon-airbnb-2024'
+    '10-stratigikes-afxisi-kratiseon-airbnb-2024',
+    '7-mystika-gia-na-gineis-superhost-airbnb-2025'
   ];
 };
 

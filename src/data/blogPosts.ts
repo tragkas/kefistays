@@ -51,3 +51,4 @@ export const getAllBlogPosts = (): LegacyBlogPost[] => {
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 };
+
