@@ -122,7 +122,7 @@ const SEOHead = ({
     // JSON-LD structured data
     const structuredData = {
       "@context": "https://schema.org",
-      "@type": article ? "Article" : "WebSite",
+      "@type": article ? "Article" : "LocalBusiness",
       "name": fullTitle,
       "description": description,
       "url": canonical || window.location.href,
@@ -130,9 +130,65 @@ const SEOHead = ({
       "publisher": {
         "@type": "Organization",
         "name": "Kefistays",
-        "url": "https://kefistays.com"
+        "url": "https://kefistays.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ogImage
+        }
       }
     };
+
+    // Add LocalBusiness specific data if not an article
+    if (!article) {
+      Object.assign(structuredData, {
+        "@type": "LocalBusiness",
+        "priceRange": "€799-€1299",
+        "telephone": "+30-XXX-XXXXXXX",
+        "email": "kefistays@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Αθήνα",
+          "addressCountry": "GR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "37.9838",
+          "longitude": "23.7275"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "serviceArea": {
+          "@type": "Country",
+          "name": "Ελλάδα"
+        },
+        "areaServed": "Ελλάδα",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Airbnb Management Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Βασικό Πακέτο Ιστοσελίδας",
+                "description": "Επαγγελματική σελίδα για Airbnb με SEO και GDPR συμμόρφωση"
+              },
+              "price": "799",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Πλήρες Πακέτο Ιστοσελίδας",
+                "description": "Ολοκληρωμένη λύση με 5 σελίδες, SEO, και στρατηγική marketing"
+              },
+              "price": "1299",
+              "priceCurrency": "EUR"
+            }
+          ]
+        }
+      });
+    }
 
     if (article) {
       Object.assign(structuredData, {
