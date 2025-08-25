@@ -1,85 +1,104 @@
-import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { Check, X } from 'lucide-react';
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="py-16 bg-gray-50">
+    <section id="pricing" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Επίλεξε το Ιδανικό Πακέτο
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Επίλεξε το Ιδανικό Πακέτο</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ξεκίνα να αυξάνεις τις κρατήσεις σου με επαγγελματική υποστήριξη και στρατηγική
           </p>
         </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Basic Package */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Βασικό Πακέτο Ιστοσελίδας</h3>
-              <div className="text-4xl font-bold text-gray-900 mb-1">€799</div>
-              <div className="text-gray-500">εφάπαξ</div>
+          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+            <h3 className="text-xl font-bold mb-2 text-center">Βασικό Πακέτο Ιστοσελίδας</h3>
+            <div className="text-center mb-6">
+              <span className="text-4xl font-bold">€799</span>
+              <span className="text-gray-600 ml-2">εφάπαξ</span>
             </div>
-
-            <div className="space-y-4 mb-8">
-              {[
-                "Επαγγελματική Σελίδα (1 Page)",
-                "Ακολουθηθεί την πολιτική της ΑΑΔΕ",
-                "Συμμόρφωση με το GDPR",
-                "Τοπική ρύθμιση SEO",
-                "Αναλυτικά στοιχεία",
-                "Δημιουργία οδηγού PDF"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">{feature}</span>
-                </div>
-              ))}
-            </div>
-
-            <Button 
-              variant="outline" 
-              className="w-full py-3 border-primary text-primary hover:bg-primary hover:text-white"
-            >
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Επαγγελματική Σελίδα (1 Page)</span>
+              </li>
+                <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Ακολουθηθεί την πολιτική της ΑΑΔΕ</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Συμμόρφωση με το GDPR</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Τοπική ρύθμιση SEO</span>
+              </li>
+              <li className="flex items-start">
+                <X className="text-gray-500 mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Αναλυτικά στοιχεία</span>
+              </li>
+               <li className="flex items-start">
+                <X className="text-gray-500 mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Δημιουργία οδηγού PDF</span>
+              </li>
+            </ul>
+            
+            <a href="https://betterhostnow.wixstudio.com/airbnb-preview">
+              <Button className="w-full bg-primary text-white hover:bg-primary/90">
               Δες Παραδείγματα →
-            </Button>
+              </Button>
+            </a>
           </div>
-
-          {/* Premium Package */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary relative">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold">
-                ΠΡΟΤΕΙΝΟΜΕΝΟ
-              </span>
+          
+          {/* Full Package */}
+          <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow border-2 border-primary relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs uppercase tracking-wider py-1 px-3 rounded-full">
+              Προτεινόμενο
             </div>
-
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Πλήρες Πακέτο Ιστοσελίδας</h3>
-              <div className="text-4xl font-bold text-gray-900 mb-1">€1,299</div>
-              <div className="text-gray-500">εφάπαξ</div>
+            <h3 className="text-xl font-bold mb-2 text-center">Πλήρες Πακέτο Ιστοσελίδας</h3>
+            <div className="text-center mb-6">
+              <span className="text-4xl font-bold">€1,299</span>
+              <span className="text-gray-600 ml-2">εφάπαξ</span>
             </div>
-
-            <div className="space-y-4 mb-8">
-              {[
-                "Επαγγελματική Σελίδα (5 Pages)",
-                "Ακολουθηθεί την πολιτική της ΑΑΔΕ",
-                "Συμμόρφωση με το GDPR",
-                "Τοπική ρύθμιση SEO",
-                "Αναλυτικά στοιχεία",
-                "Δημιουργία οδηγού PDF"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">{feature}</span>
-                </div>
-              ))}
-            </div>
-
-            <Button className="w-full bg-primary hover:bg-gray-400 text-white font-semibold py-3">
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Επαγγελματική Σελίδα (5 Pages) </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Ακολουθηθεί την πολιτική της ΑΑΔΕ</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Συμμόρφωση με το GDPR</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Τοπική ρύθμιση SEO</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Αναλυτικά στοιχεία</span>
+              </li>
+                <li className="flex items-start">
+                <Check className="text-primary mr-2 flex-shrink-0 mt-1" size={18} />
+                <span>Δημιουργία οδηγού PDF</span>
+              </li>
+            </ul>
+            
+            <a href="#contact">
+              <Button className="w-full bg-primary text-white hover:bg-primary/90">
               Επικοινώνησε Μαζί μας →
-            </Button>
+              </Button>
+            </a>
           </div>
         </div>
       </div>
