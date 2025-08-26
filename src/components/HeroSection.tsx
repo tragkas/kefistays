@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Globe, Star } from "lucide-react";
-import heroImage from "@/assets/hero-airbnb.jpg";
+import heroImage from "@/assets/hero-airbnb-optimized.webp";
 
 const HeroSection = () => {
   return (
@@ -11,6 +11,8 @@ const HeroSection = () => {
           src={heroImage} 
           alt="Professional Airbnb Management"
           className="w-full h-full object-cover opacity-10"
+          fetchPriority="high"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 to-white/90" />
       </div>
