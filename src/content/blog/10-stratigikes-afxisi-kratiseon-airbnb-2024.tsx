@@ -35,7 +35,7 @@ export const post: BlogPost = {
   
   // Featured Image
   featuredImage: {
-    url: "/blog/airbnb-strategies-2024.jpg",
+    url: "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop",
     alt: "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024 - Οδηγός Kefistays",
     width: 1200,
     height: 630

@@ -142,6 +142,10 @@ const BlogPost = () => {
         if (line.startsWith('## ')) {
           return <h2 key={index} className="text-2xl font-bold text-gray-900 mt-6 mb-3">{line.substring(3)}</h2>;
         }
+        if (line.startsWith('### ')) {
+          return <h3 key={index} className="text-1xl font-bold text-gray-900 mt-6 mb-2">{line.substring(4)}</h3>;
+        }
+        
         
         // Images
         const imageMatch = line.match(/!\[(.*?)\]\((.*?)\)/);

@@ -17,7 +17,9 @@ const getAvailableSlugs = (): string[] => {
   // or use a build-time generated list of available posts
   return [
     '10-stratigikes-afxisi-kratiseon-airbnb-2024',
-    '7-mystika-gia-na-gineis-superhost-airbnb-2025'
+    '7-mystika-gia-na-gineis-superhost-airbnb-2025',
+    'pos-na-veltistopoiisete-to-photo-tour-airbnb',
+    'airbnb-fotografisi-symvoules-mystika'
   ];
 };
 
