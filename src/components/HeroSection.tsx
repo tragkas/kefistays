@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Globe, Star } from "lucide-react";
-import heroImage from "@/assets/hero-airbnb-optimized.webp";
+import heroImage from "/opengraph-image-kefistays.png";
 
 const HeroSection = () => {
   return (
