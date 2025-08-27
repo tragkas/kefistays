@@ -33,6 +33,8 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <Link to="/blog" className="text-gray-600 hover:text-primary font-medium">Άρθρα</Link>
+          <Link to="/experience-hosts" className="text-gray-600 hover:text-primary font-medium">Experience Hosts</Link>
+          <Link to="/service-providers" className="text-gray-600 hover:text-primary font-medium">Service Providers</Link>
           <a href={getNavLink('contact')}>
             <Button className="bg-primary text-white hover:bg-primary/90">
               Επικοινωνία
@@ -51,6 +53,20 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Άρθρα
+                </Link>
+                <Link 
+                  to="/experience-hosts" 
+                  className="text-gray-600 hover:text-primary py-2 border-b border-gray-100"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Experience Hosts
+                </Link>
+                <Link 
+                  to="/service-providers" 
+                  className="text-gray-600 hover:text-primary py-2 border-b border-gray-100"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Service Providers
                 </Link>
                 <a 
                   href={getNavLink('contact')} 

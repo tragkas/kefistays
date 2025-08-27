@@ -32,6 +32,12 @@ const Footer = () => {
                 <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Άρθρα</Link>
               </li>
               <li>
+                <Link to="/experience-hosts" className="text-gray-400 hover:text-white transition-colors">Experience Hosts</Link>
+              </li>
+              <li>
+                <Link to="/service-providers" className="text-gray-400 hover:text-white transition-colors">Service Providers</Link>
+              </li>
+              <li>
                 <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Όροι Χρήσης</Link>
               </li>
               <li>
