@@ -32,10 +32,10 @@ const Footer = () => {
                 <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Άρθρα</Link>
               </li>
               <li>
-                <Link to="/experience-hosts" className="text-gray-400 hover:text-white transition-colors">Experience Hosts</Link>
+                <Link to="/experience-hosts" className="text-gray-400 hover:text-white transition-colors">Εμπειρίες Airbnb</Link>
               </li>
               <li>
-                <Link to="/service-providers" className="text-gray-400 hover:text-white transition-colors">Service Providers</Link>
+                <Link to="/service-providers" className="text-gray-400 hover:text-white transition-colors">Υπηρεσίες Airbnb</Link>
               </li>
               <li>
                 <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Όροι Χρήσης</Link>
