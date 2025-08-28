@@ -13,9 +13,9 @@ const ExperienceHosts = () => {
   return (
     <>
       <SEOHead 
-        title="Websites for Airbnb Experience Hosts - Stand Out & Boost Bookings"
-        description="Create a professional website for your Airbnb Experience. Control your brand, boost bookings, and attract guests beyond Airbnb with SEO-ready websites."
-        keywords="airbnb experience website, experience host website, airbnb experience marketing, experience host branding"
+        title="Websites για Airbnb Experience Hosts - Ξεχωρίστε & Αυξήστε τις Κρατήσεις"
+        description="Δημιουργήστε ένα επαγγελματικό website για την Airbnb Experience σας. Ελέγξτε το brand σας, αυξήστε τις κρατήσεις και προσελκύστε επισκέπτες πέρα από το Airbnb."
+        keywords="airbnb experience website, experience host website greece, airbnb experience marketing ελλάδα, experience host branding"
         canonical={`${window.location.origin}/experience-hosts`}
       />
       
@@ -27,17 +27,17 @@ const ExperienceHosts = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-                  Your Airbnb Experience Deserves Its Own Website
+                  Η εμπειρία σας στο Airbnb αξίζει το δικό της website
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                  Stand out, attract more guests, and build your brand beyond Airbnb.
+                  Ξεχωρίστε, προσελκύστε περισσότερους επισκέπτες και χτίστε το brand σας πέρα από το Airbnb.
                 </p>
                 <Button 
                   size="lg" 
                   onClick={scrollToContact}
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Launch My Experience Website
+                  Δημιουργήστε το δικό μου Experience Website
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -49,43 +49,43 @@ const ExperienceHosts = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
-                  Why You Need a Website as an Experience Host
+                  Γιατί χρειάζεστε Website ως Experience Host
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Star className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Control Your Brand</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Έλεγχος του Brand σας</h3>
                     <p className="text-muted-foreground">
-                      Showcase your unique experience with your own design, photos, and story.
+                      Παρουσιάστε τη μοναδική σας εμπειρία με το δικό σας design, φωτογραφίες και ιστορία.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Globe className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Boost Bookings</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Αύξηση Κρατήσεων</h3>
                     <p className="text-muted-foreground">
-                      Rank on Google and capture guests outside of Airbnb.
+                      Εμφανιστείτε στο Google και προσελκύστε επισκέπτες εκτός Airbnb.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Users className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Direct Communication</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Άμεση Επικοινωνία</h3>
                     <p className="text-muted-foreground">
-                      Collect emails, take direct bookings, and nurture repeat customers.
+                      Συλλέξτε emails, δεχθείτε άμεσες κρατήσεις και καλλιεργήστε επαναλαμβανόμενους πελάτες.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Camera className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Build Trust</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Χτίσιμο Εμπιστοσύνης</h3>
                     <p className="text-muted-foreground">
-                      Professional websites make your experience look more reliable and premium.
+                      Ένα επαγγελματικό website κάνει την εμπειρία σας να φαίνεται πιο αξιόπιστη και premium.
                     </p>
                   </div>
                 </div>
@@ -98,20 +98,20 @@ const ExperienceHosts = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
-                  Features of Your Dedicated Website
+                  Χαρακτηριστικά του Αποκλειστικού σας Website
                 </h2>
                 <div className="grid md:grid-cols-3 gap-8 text-left">
                   <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Mobile-Friendly & Fast</h3>
-                    <p className="text-muted-foreground">SEO-ready websites that load quickly on all devices.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Φιλικό προς Κινητά & Γρήγορο</h3>
+                    <p className="text-muted-foreground">Φιλικό προς κινητά, γρήγορο και έτοιμο για SEO.</p>
                   </div>
                   <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Beautiful Galleries</h3>
-                    <p className="text-muted-foreground">Showcase your experience with stunning photo galleries and host profiles.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Όμορφες Γκαλερί</h3>
+                    <p className="text-muted-foreground">Όμορφες γκαλερί και προφίλ οικοδεσπότη.</p>
                   </div>
                   <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Custom Domain</h3>
-                    <p className="text-muted-foreground">Establish credibility with your own professional domain name.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Προσωπικό Domain</h3>
+                    <p className="text-muted-foreground">Προσωπικό domain για αξιοπιστία.</p>
                   </div>
                 </div>
               </div>
@@ -123,34 +123,34 @@ const ExperienceHosts = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-16 text-foreground">
-                  How It Works
+                  Πώς Λειτουργεί
                 </h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">
                     <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
                       1
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Contact Us</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Επικοινωνήστε μαζί μας</h3>
                     <p className="text-muted-foreground">
-                      Reach out to us through our contact form below.
+                      Επικοινωνήστε μαζί μας μέσω της φόρμας επικοινωνίας παρακάτω.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
                       2
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Share Your Details</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Μοιραστείτε τα Στοιχεία σας</h3>
                     <p className="text-muted-foreground">
-                      Share your photos, description, and pricing information.
+                      Στείλτε μας τις φωτογραφίες, την περιγραφή και τις τιμές σας.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
                       3
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Go Live in 7 Days</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Online σε 7 Ημέρες</h3>
                     <p className="text-muted-foreground">
-                      Get your website live in as little as 7 days.
+                      Το website σας ανεβαίνει online σε μόλις 7 ημέρες.
                     </p>
                   </div>
                 </div>
@@ -163,17 +163,17 @@ const ExperienceHosts = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                  Ready to grow beyond Airbnb?
+                  Έτοιμοι να αναπτυχθείτε πέρα από το Airbnb;
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8">
-                  Get your dedicated Experience Host website today.
+                  Αποκτήστε το δικό σας Experience Host website σήμερα.
                 </p>
                 <Button 
                   size="lg" 
                   onClick={scrollToContact}
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Start My Website
+                  Ξεκινήστε το Website μου
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>

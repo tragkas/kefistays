@@ -13,9 +13,9 @@ const ServiceProviders = () => {
   return (
     <>
       <SEOHead 
-        title="Websites for Airbnb Service Providers - Get Discovered & Booked"
-        description="Professional websites for Airbnb service providers. From chefs to wellness experts - showcase your services, get discovered on Google, and grow your business."
-        keywords="airbnb service provider website, chef website, wellness website, service provider marketing, airbnb services"
+        title="Websites για Airbnb Service Providers - Ανακαλυφθείτε & Δεχθείτε Κρατήσεις"
+        description="Επαγγελματικά websites για παρόχους υπηρεσιών Airbnb. Από σεφ μέχρι wellness experts - παρουσιάστε τις υπηρεσίες σας, ανακαλυφθείτε στο Google και αναπτύξτε την επιχείρησή σας."
+        keywords="airbnb service provider website ελλάδα, chef website greece, wellness website, service provider marketing, airbnb υπηρεσίες"
         canonical={`${window.location.origin}/service-providers`}
       />
       
@@ -27,17 +27,17 @@ const ServiceProviders = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-                  Showcase Your Airbnb Service with a Professional Website
+                  Παρουσιάστε την υπηρεσία σας στο Airbnb με ένα επαγγελματικό website
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                  From chefs to wellness experts—get discovered, get booked, get paid.
+                  Από σεφ μέχρι wellness experts—ανακαλυφθείτε, δεχθείτε κρατήσεις, πληρωθείτε.
                 </p>
                 <Button 
                   size="lg" 
                   onClick={scrollToContact}
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Create My Service Website
+                  Δημιουργήστε το δικό μου Service Website
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -49,34 +49,34 @@ const ServiceProviders = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
-                  Why a Website is Essential for Airbnb Service Providers
+                  Γιατί ένα Website είναι Απαραίτητο για Airbnb Service Providers
                 </h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Globe className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Reach More Clients</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Προσεγγίστε Περισσότερους Πελάτες</h3>
                     <p className="text-muted-foreground">
-                      Appear on Google, not just inside Airbnb's app.
+                      Εμφανιστείτε στο Google, όχι μόνο μέσα στην εφαρμογή του Airbnb.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Star className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Stand Out</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Ξεχωρίστε</h3>
                     <p className="text-muted-foreground">
-                      Highlight your skills, portfolio, and client reviews.
+                      Προβάλετε τις δεξιότητές σας, το portfolio και τις αξιολογήσεις πελατών.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Users className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Build Loyalty</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Χτίστε Πιστότητα</h3>
                     <p className="text-muted-foreground">
-                      Collect emails, create promotions, and grow repeat business.
+                      Συλλέξτε emails, δημιουργήστε προσφορές και ενισχύστε τις επαναλαμβανόμενες κρατήσεις.
                     </p>
                   </div>
                 </div>
@@ -89,33 +89,33 @@ const ServiceProviders = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
-                  Features for Service Provider Websites
+                  Χαρακτηριστικά για Service Provider Websites
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   <div className="bg-background p-6 rounded-lg shadow-sm">
                     <Camera className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Portfolio & Galleries</h3>
-                    <p className="text-muted-foreground">Showcase your work with beautiful photo galleries.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Portfolio & Γκαλερί</h3>
+                    <p className="text-muted-foreground">Portfolio & γκαλερί φωτογραφιών για να παρουσιάσετε τη δουλειά σας.</p>
                   </div>
                   <div className="bg-background p-6 rounded-lg shadow-sm">
                     <Globe className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Online Booking</h3>
-                    <p className="text-muted-foreground">Payment integration for seamless client bookings.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Online Κρατήσεις</h3>
+                    <p className="text-muted-foreground">Ενσωμάτωση online κρατήσεων + πληρωμών.</p>
                   </div>
                   <div className="bg-background p-6 rounded-lg shadow-sm">
                     <Star className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">SEO Optimization</h3>
-                    <p className="text-muted-foreground">Rank for "[service] in [city]" searches on Google.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">SEO Βελτιστοποίηση</h3>
+                    <p className="text-muted-foreground">SEO βελτιστοποίηση για να κατατάσσεστε στο "[υπηρεσία] στην [πόλη]".</p>
                   </div>
                   <div className="bg-background p-6 rounded-lg shadow-sm">
                     <Users className="h-8 w-8 text-primary mb-4" />
                     <h3 className="text-xl font-semibold mb-3 text-foreground">Reviews & Testimonials</h3>
-                    <p className="text-muted-foreground">Display client feedback and build trust.</p>
+                    <p className="text-muted-foreground">Ενότητες με reviews & testimonials.</p>
                   </div>
                   <div className="bg-background p-6 rounded-lg shadow-sm">
                     <Sparkles className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Professional Contact</h3>
-                    <p className="text-muted-foreground">Contact forms and chat options for easy communication.</p>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Επαγγελματική Επικοινωνία</h3>
+                    <p className="text-muted-foreground">Επαγγελματική φόρμα επικοινωνίας & επιλογές chat.</p>
                   </div>
                 </div>
               </div>
@@ -127,36 +127,36 @@ const ServiceProviders = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
-                  Use Cases
+                  Περιπτώσεις Χρήσης
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Utensils className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground">Chef</h3>
-                    <p className="text-muted-foreground text-sm">Offering private dining experiences</p>
+                    <h3 className="text-lg font-semibold text-foreground">Σεφ</h3>
+                    <p className="text-muted-foreground text-sm">Ένας σεφ που προσφέρει private dining</p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Dumbbell className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground">Yoga Teacher</h3>
-                    <p className="text-muted-foreground text-sm">Offering private classes</p>
+                    <h3 className="text-lg font-semibold text-foreground">Δάσκαλος Yoga</h3>
+                    <p className="text-muted-foreground text-sm">Ένας δάσκαλος yoga που κάνει μαθήματα</p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Camera className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground">Photographer</h3>
-                    <p className="text-muted-foreground text-sm">Offering professional photoshoots</p>
+                    <h3 className="text-lg font-semibold text-foreground">Φωτογράφος</h3>
+                    <p className="text-muted-foreground text-sm">Ένας φωτογράφος που παρέχει photoshoots</p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Heart className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground">Spa Therapist</h3>
-                    <p className="text-muted-foreground text-sm">Offering in-home treatments</p>
+                    <h3 className="text-lg font-semibold text-foreground">Θεραπευτής Spa</h3>
+                    <p className="text-muted-foreground text-sm">Ένας θεραπευτής spa που προσφέρει θεραπείες κατ' οίκον</p>
                   </div>
                 </div>
               </div>
@@ -168,34 +168,34 @@ const ServiceProviders = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-16 text-foreground">
-                  How It Works
+                  Πώς Λειτουργεί
                 </h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">
                     <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
                       1
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Contact Us</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Επικοινωνήστε μαζί μας</h3>
                     <p className="text-muted-foreground">
-                      Reach out to us through our contact form below.
+                      Επικοινωνήστε μαζί μας μέσω της φόρμας επικοινωνίας παρακάτω.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
                       2
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Provide Details</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Δώστε Λεπτομέρειες</h3>
                     <p className="text-muted-foreground">
-                      Provide your service details and media content.
+                      Δώστε μας τα στοιχεία και το υλικό της υπηρεσίας σας.
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mx-auto mb-4">
                       3
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">Launch & Book</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-foreground">Λανσάρισμα & Κρατήσεις</h3>
                     <p className="text-muted-foreground">
-                      Launch your professional site—ready to book clients directly.
+                      Λανσάρετε το επαγγελματικό σας site—έτοιμο για άμεσες κρατήσεις πελατών.
                     </p>
                   </div>
                 </div>
@@ -208,17 +208,17 @@ const ServiceProviders = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                  Your services deserve more than a listing
+                  Οι υπηρεσίες σας αξίζουν περισσότερα από μια απλή καταχώριση
                 </h2>
                 <p className="text-xl text-muted-foreground mb-8">
-                  Let's build your professional Airbnb Service website today.
+                  Ας χτίσουμε το επαγγελματικό σας Airbnb Service website σήμερα.
                 </p>
                 <Button 
                   size="lg" 
                   onClick={scrollToContact}
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Start My Website
+                  Ξεκινήστε το Website μου
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
