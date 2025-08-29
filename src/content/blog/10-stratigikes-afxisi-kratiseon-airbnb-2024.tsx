@@ -23,7 +23,7 @@ export const post: BlogPost = {
       "airbnb εισόδημα",
       "airbnb βελτιστοποίηση"
     ],
-    canonical: "https://kefistays.com/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024",
+    canonical: "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024",
     focusKeyword: "airbnb στρατηγικές 2024"
   },
 
@@ -51,26 +51,26 @@ export const post: BlogPost = {
     "@type": "Article",
     "headline": "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024",
     "description": "Ανακάλυψε τις πιο αποτελεσματικές στρατηγικές που χρησιμοποιούν οι επιτυχημένοι hosts για να αυξήσουν τα έσοδά τους στο Airbnb",
-    "image": "https://kefistays.com/blog/airbnb-strategies-2024.jpg",
+    "image": "https://kefistays.gr/blog/airbnb-strategies-2024.jpg",
     "author": {
       "@type": "Organization",
       "name": "Kefistays Team",
-      "url": "https://kefistays.com"
+      "url": "https://kefistays.gr"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Kefistays",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://kefistays.com/logo.png"
+        "url": "https://kefistays.gr/opengraph-image-kefistays.png"
       },
-      "url": "https://kefistays.com"
+      "url": "https://kefistays.gr"
     },
     "datePublished": "2024-08-23T10:00:00.000Z",
     "dateModified": "2024-08-23T15:30:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://kefistays.com/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024"
+      "@id": "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024"
     },
     "articleSection": "Στρατηγικές Airbnb",
     "keywords": "airbnb στρατηγικές, αύξηση κρατήσεων airbnb, airbnb marketing, βραχυχρόνια μίσθωση"

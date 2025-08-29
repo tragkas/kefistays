@@ -25,6 +25,11 @@ const SEOHead = ({
   const fullTitle = `${title} | Kefistays - Διαχείριση Airbnb`;
   
   useEffect(() => {
+    // Normalize canonical URL and fix domain consistency
+    const baseUrl = 'https://kefistays.gr';
+    const normalizedCanonical = canonical ? canonical.replace('https://kefistays.com', baseUrl) : canonical;
+    const currentUrl = normalizedCanonical || `${baseUrl}${window.location.pathname}`;
+    
     // Set document title
     document.title = fullTitle;
     
@@ -48,23 +53,52 @@ const SEOHead = ({
       metaKeywords.setAttribute('content', keywords);
     }
 
-    // Set canonical URL
-    if (canonical) {
-      let linkCanonical = document.querySelector('link[rel="canonical"]');
-      if (!linkCanonical) {
-        linkCanonical = document.createElement('link');
-        linkCanonical.setAttribute('rel', 'canonical');
-        document.head.appendChild(linkCanonical);
+    // Set language and locale meta tags
+    const setMetaTag = (name: string, content: string) => {
+      let meta = document.querySelector(`meta[name="${name}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('name', name);
+        document.head.appendChild(meta);
       }
-      linkCanonical.setAttribute('href', canonical);
-    }
+      meta.setAttribute('content', content);
+    };
 
-    // Open Graph meta tags
+    setMetaTag('language', 'el');
+    
+    // Set hreflang
+    let hreflangLink = document.querySelector('link[rel="alternate"][hreflang="el"]');
+    if (!hreflangLink) {
+      hreflangLink = document.createElement('link');
+      hreflangLink.setAttribute('rel', 'alternate');
+      hreflangLink.setAttribute('hreflang', 'el');
+      document.head.appendChild(hreflangLink);
+    }
+    hreflangLink.setAttribute('href', currentUrl);
+
+    // Set canonical URL
+    let linkCanonical = document.querySelector('link[rel="canonical"]');
+    if (!linkCanonical) {
+      linkCanonical = document.createElement('link');
+      linkCanonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(linkCanonical);
+    }
+    linkCanonical.setAttribute('href', currentUrl);
+
+    // Normalize ogImage URL
+    const imageUrl = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
+
+    // Open Graph meta tags - enhanced with URL and locale
     const ogTags = [
       { property: 'og:title', content: fullTitle },
       { property: 'og:description', content: description },
       { property: 'og:type', content: article ? 'article' : 'website' },
-      { property: 'og:image', content: ogImage },
+      { property: 'og:url', content: currentUrl },
+      { property: 'og:locale', content: 'el_GR' },
+      { property: 'og:image', content: imageUrl },
+      { property: 'og:image:alt', content: fullTitle },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
       { property: 'og:site_name', content: 'Kefistays' }
     ];
 
@@ -78,12 +112,13 @@ const SEOHead = ({
       metaTag.setAttribute('content', content);
     });
 
-    // Twitter Card meta tags
+    // Twitter Card meta tags - enhanced with URL
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: fullTitle },
       { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: ogImage }
+      { name: 'twitter:url', content: currentUrl },
+      { name: 'twitter:image', content: imageUrl }
     ];
 
     twitterTags.forEach(({ name, content }) => {
@@ -96,7 +131,10 @@ const SEOHead = ({
       metaTag.setAttribute('content', content);
     });
 
-    // Article specific meta tags
+    // Article specific meta tags - clear existing article tags first
+    const existingArticleTags = document.querySelectorAll('meta[property^="article:"]');
+    existingArticleTags.forEach(tag => tag.remove());
+    
     if (article) {
       const articleTags = [
         { property: 'article:published_time', content: article.publishedTime },
@@ -119,21 +157,22 @@ const SEOHead = ({
       });
     }
 
-    // JSON-LD structured data
+    // JSON-LD structured data - fixed URLs and enhanced schema
     const structuredData = {
       "@context": "https://schema.org",
       "@type": article ? "Article" : "LocalBusiness",
       "name": fullTitle,
       "description": description,
-      "url": canonical || window.location.href,
-      "image": ogImage,
+      "url": currentUrl,
+      "image": imageUrl,
+      "inLanguage": "el",
       "publisher": {
         "@type": "Organization",
         "name": "Kefistays",
-        "url": "https://kefistays.com",
+        "url": baseUrl,
         "logo": {
           "@type": "ImageObject",
-          "url": ogImage
+          "url": `${baseUrl}/opengraph-image-kefistays.png`
         }
       }
     };
@@ -198,6 +237,10 @@ const SEOHead = ({
         "author": {
           "@type": "Person",
           "name": article.author
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": currentUrl
         },
         "keywords": article.tags.join(", ")
       });

@@ -42,3 +42,14 @@
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 </IfModule>
+
+# SPA fallback - redirect all non-file requests to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Handle Angular and React Router paths
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(\w+\.(\w+|\d+)|sitemap\.xml|robots\.txt)$
+    RewriteRule . /index.html [L]
+</IfModule>

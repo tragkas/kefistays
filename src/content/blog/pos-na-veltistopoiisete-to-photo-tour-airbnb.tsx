@@ -21,7 +21,7 @@ export const post: BlogPost = {
       "airbnb tips",
       "kefistays"
     ],
-    canonical: "https://kefistays.com/blog/pos-na-veltistopoiisete-to-photo-tour-airbnb",
+    canonical: "https://kefistays.gr/blog/pos-na-veltistopoiisete-to-photo-tour-airbnb",
     focusKeyword: "airbnb photo tour"
   },
 
@@ -54,22 +54,22 @@ export const post: BlogPost = {
     "author": {
       "@type": "Organization",
       "name": "Kefistays Team",
-      "url": "https://kefistays.com"
+      "url": "https://kefistays.gr"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Kefistays",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://kefistays.com/logo.png"
+        "url": "https://kefistays.gr/opengraph-image-kefistays.png"
       },
-      "url": "https://kefistays.com"
+      "url": "https://kefistays.gr"
     },
     "datePublished": "2025-08-26T10:00:00.000Z",
     "dateModified": "2025-08-26T14:30:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://kefistays.com/blog/pos-na-veltistopoiisete-to-photo-tour-airbnb"
+      "@id": "https://kefistays.gr/blog/pos-na-veltistopoiisete-to-photo-tour-airbnb"
     },
     "articleSection": "Airbnb Hosting",
     "keywords": "airbnb φωτογραφίες, photo tour airbnb, αύξηση κρατήσεων, kefistays"

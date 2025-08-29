@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://kefistays.gr/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/" />
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://kefistays.gr/blog</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/blog" />
+  </url>
+
+  <!-- Experience Hosts -->
+  <url>
+    <loc>https://kefistays.gr/experience-hosts</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/experience-hosts" />
+  </url>
+
+  <!-- Service Providers -->
+  <url>
+    <loc>https://kefistays.gr/service-providers</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/service-providers" />
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://kefistays.gr/terms</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/terms" />
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://kefistays.gr/privacy</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/privacy" />
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024</loc>
+    <lastmod>2024-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024" />
+  </url>
+
+  <url>
+    <loc>https://kefistays.gr/blog/airbnb-fotografisi-symvoules-mystika</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/blog/airbnb-fotografisi-symvoules-mystika" />
+  </url>
+
+  <url>
+    <loc>https://kefistays.gr/blog/pos-na-veltistopoiisete-to-photo-tour-airbnb</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/blog/pos-na-veltistopoiisete-to-photo-tour-airbnb" />
+  </url>
+
+  <url>
+    <loc>https://kefistays.gr/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://kefistays.gr/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025" />
+  </url>
+
+</urlset>

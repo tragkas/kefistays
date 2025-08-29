@@ -20,7 +20,7 @@ export const post: BlogPost = {
       "διαχείριση airbnb",
       "kefistays"
     ],
-    canonical: "https://kefistays.com/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025",
+    canonical: "https://kefistays.gr/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025",
     focusKeyword: "superhost airbnb 2025"
   },
 
@@ -52,22 +52,22 @@ export const post: BlogPost = {
     "author": {
       "@type": "Organization",
       "name": "Kefistays Team",
-      "url": "https://kefistays.com"
+      "url": "https://kefistays.gr"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Kefistays",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://kefistays.com/logo.png"
+        "url": "https://kefistays.gr/opengraph-image-kefistays.png"
       },
-      "url": "https://kefistays.com"
+      "url": "https://kefistays.gr"
     },
     "datePublished": "2025-08-23T10:00:00.000Z",
     "dateModified": "2025-08-23T14:30:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://kefistays.com/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025"
+      "@id": "https://kefistays.gr/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025"
     },
     "articleSection": "Airbnb Hosting",
     "keywords": "superhost airbnb, airbnb στρατηγικές, αύξηση κρατήσεων airbnb, airbnb marketing"
