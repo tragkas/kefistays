@@ -40,22 +40,22 @@ const Blog = () => {
             author: {
               "@type": "Organization",
               name: legacyPost.author,
-              url: "https://kefistays.com"
+              url: "https://kefistays.gr"
             },
             publisher: {
               "@type": "Organization", 
               name: "Kefistays",
               logo: {
                 "@type": "ImageObject",
-                url: "https://kefistays.com/logo.png"
+                url: "https://kefistays.gr/logo.png"
               },
-              url: "https://kefistays.com"
+              url: "https://kefistays.gr"
             },
             datePublished: legacyPost.publishedAt,
             dateModified: legacyPost.updatedAt || legacyPost.publishedAt,
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://kefistays.com/blog/${legacyPost.slug}`
+              "@id": `https://kefistays.gr/blog/${legacyPost.slug}`
             },
             articleSection: legacyPost.tags[0] || "Γενικά",
             keywords: legacyPost.seo.keywords.join(", ")
@@ -67,7 +67,7 @@ const Blog = () => {
           },
           seo: {
             ...legacyPost.seo,
-            canonical: `https://kefistays.com/blog/${legacyPost.slug}`,
+            canonical: `https://kefistays.gr/blog/${legacyPost.slug}`,
             focusKeyword: legacyPost.seo.keywords[0]
           }
         } as BlogPost));

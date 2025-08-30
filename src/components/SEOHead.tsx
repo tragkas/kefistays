@@ -27,7 +27,7 @@ const SEOHead = ({
   useEffect(() => {
     // Normalize canonical URL and fix domain consistency
     const baseUrl = 'https://kefistays.gr';
-    const normalizedCanonical = canonical ? canonical.replace('https://kefistays.com', baseUrl) : canonical;
+    const normalizedCanonical = canonical ? canonical.replace('https://kefistays.gr', baseUrl) : canonical;
     const currentUrl = normalizedCanonical || `${baseUrl}${window.location.pathname}`;
     
     // Set document title
