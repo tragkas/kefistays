@@ -32,7 +32,7 @@ export const post: BlogPost = {
 
   // Featured Image
   featuredImage: {
-    url: "https://images.unsplash.com/photo-1598928506311-c55ded3e1f3a?q=80&w=1200&auto=format&fit=crop",
+    url: "https://images.unsplash.com/photo-1625296278775-c0ccc86b9338?q=80&w=1200&auto=format&fit=crop",
     alt: "Δημιουργία τίτλου Airbnb που τραβάει την προσοχή",
     width: 1200,
     height: 630
@@ -49,7 +49,7 @@ export const post: BlogPost = {
     "headline": "Airbnb Τίτλος Αγγελίας: Πώς να βρείτε το τέλειο όνομα που πουλάει",
     "description":
       "Μάθετε πώς να δημιουργήσετε έναν τίτλο Airbnb που θα ξεχωρίζει και θα αυξήσει τις κρατήσεις σας. Συμβουλές για λέξεις-κλειδιά και δημιουργικότητα.",
-    "image": "https://images.unsplash.com/photo-1598928506311-c55ded3e1f3a?q=80&w=1200&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1625296278775-c0ccc86b9338?q=80&w=1200&auto=format&fit=crop",
     "author": {
       "@type": "Organization",
       "name": "Kefistays Team",
