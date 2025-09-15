@@ -24,7 +24,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-          Ξεχώρισε από τον ανταγωνισμό με επαγγελματικό website.
+          Ξεχώρισε από τους γείτονες με επαγγελματικό website.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">

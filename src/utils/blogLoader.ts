@@ -19,7 +19,8 @@ const getAvailableSlugs = (): string[] => {
     '10-stratigikes-afxisi-kratiseon-airbnb-2024',
     '7-mystika-gia-na-gineis-superhost-airbnb-2025',
     'pos-na-veltistopoiisete-to-photo-tour-airbnb',
-    'airbnb-fotografisi-symvoules-mystika'
+    'airbnb-fotografisi-symvoules-mystika',
+    'airbnb-titlos-aggelias-idees-symvoules'
   ];
 };
 
