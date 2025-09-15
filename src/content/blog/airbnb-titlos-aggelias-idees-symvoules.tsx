@@ -3,7 +3,7 @@ import { BlogPost } from "@/types/blog";
 export const post: BlogPost = {
   // Basic Information
   id: "5",
-  title: "Airbnb Τίτλος Αγγελίας: Πώς να βρείτε το τέλειο όνομα που πουλάει",
+  title: "Airbnb Τίτλος: Πώς να βρείτε το τέλειο όνομα που πουλάει",
   slug: "airbnb-titlos-aggelias-idees-symvoules",
   excerpt:
     "Ο τίτλος της Airbnb αγγελίας σας είναι η πρώτη εντύπωση που σχηματίζει ο επισκέπτης. Μάθετε πώς να δημιουργήσετε έναν τίτλο που ξεχωρίζει, τραβάει προσοχή και αυξάνει τις κρατήσεις.",

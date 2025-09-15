@@ -20,7 +20,9 @@ const getAvailableSlugs = (): string[] => {
     '7-mystika-gia-na-gineis-superhost-airbnb-2025',
     'pos-na-veltistopoiisete-to-photo-tour-airbnb',
     'airbnb-fotografisi-symvoules-mystika',
-    'airbnb-titlos-aggelias-idees-symvoules'
+    'airbnb-titlos-aggelias-idees-symvoules',
+    'airbnb-perigrafi-kalyteres-praktikes',
+    'airbnb-amenities-essentials'
   ];
 };
 
