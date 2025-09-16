@@ -29,8 +29,8 @@ export const post: BlogPost = {
 
   // Article Information
   author: "Kefistays Team",
-  publishedAt: "2024-08-23T10:00:00.000Z",
-  updatedAt: "2024-08-23T15:30:00.000Z",
+  publishedAt: "2025-08-23T10:00:00.000Z",
+  updatedAt: "2025-08-23T15:30:00.000Z",
   readTime: 8,
   
   // Featured Image
@@ -66,8 +66,8 @@ export const post: BlogPost = {
       },
       "url": "https://kefistays.gr"
     },
-    "datePublished": "2024-08-23T10:00:00.000Z",
-    "dateModified": "2024-08-23T15:30:00.000Z",
+    "datePublished": "2025-08-23T10:00:00.000Z",
+    "dateModified": "2025-08-23T15:30:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024"

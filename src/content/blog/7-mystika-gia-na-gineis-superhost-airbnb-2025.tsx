@@ -26,8 +26,8 @@ export const post: BlogPost = {
 
   // Article Information
   author: "Kefistays Team",
-  publishedAt: "2025-08-23T10:00:00.000Z",
-  updatedAt: "2025-08-23T14:30:00.000Z",
+  publishedAt: "2025-08-24T10:00:00.000Z",
+  updatedAt: "2025-08-24T14:30:00.000Z",
   readTime: 7,
   
   // Featured Image
@@ -63,8 +63,8 @@ export const post: BlogPost = {
       },
       "url": "https://kefistays.gr"
     },
-    "datePublished": "2025-08-23T10:00:00.000Z",
-    "dateModified": "2025-08-23T14:30:00.000Z",
+    "datePublished": "2025-08-24T10:00:00.000Z",
+    "dateModified": "2025-08-24T14:30:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://kefistays.gr/blog/7-mystika-gia-na-gineis-superhost-airbnb-2025"

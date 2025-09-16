@@ -64,8 +64,8 @@ export const post: BlogPost = {
       },
       "url": "https://kefistays.gr"
     },
-    "datePublished": "2025-09-15T11:00:00.000Z",
-    "dateModified": "2025-09-15T11:00:00.000Z",
+    "datePublished": "2025-09-14T11:00:00.000Z",
+    "dateModified": "2025-09-14T11:00:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://kefistays.gr/blog/airbnb-titlos-aggelias-idees-symvoules"
