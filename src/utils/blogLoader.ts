@@ -23,7 +23,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-titlos-aggelias-idees-symvoules',
     'airbnb-perigrafi-kalyteres-praktikes',
     'airbnb-amenities-essentials',
-    'airbnb-prwtes-5-asterwn-kritikes'
+    'airbnb-prwtes-5-asterwn-kritikes',
+    'airbnb-cleaning-101-teliotita'
   ];
 };
 
