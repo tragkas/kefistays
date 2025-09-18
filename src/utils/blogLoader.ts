@@ -24,7 +24,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-perigrafi-kalyteres-praktikes',
     'airbnb-amenities-essentials',
     'airbnb-prwtes-5-asterwn-kritikes',
-    'airbnb-cleaning-101-teliotita'
+    'airbnb-cleaning-101-teliotita',
+    'airbnb-telio-krevati'
   ];
 };
 
