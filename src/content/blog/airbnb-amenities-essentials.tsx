@@ -147,6 +147,8 @@ export const post: BlogPost = {
 - Πετυχαίνετε υψηλότερες αξιολογήσεις  
 - Ξεχωρίζετε στον ανταγωνισμό
 
+Μην ξεχάσετε να προσέξετε και άλλες σημαντικές λεπτομέρειες όπως [το τέλειο στρώσιμο κρεβατιού](/blog/airbnb-telio-krevati) και [άψογη καθαριότητα](/blog/airbnb-cleaning-101-teliotita) για τις [πρώτες 5 αστέρων κριτικές](/blog/airbnb-prwtes-5-asterwn-kritikes).
+
 Key Takeaway: Η επένδυση σε σωστά essentials και amenities είναι η πιο άμεση και αποτελεσματική στρατηγική για ένα επιτυχημένο Airbnb.
   `
 };
