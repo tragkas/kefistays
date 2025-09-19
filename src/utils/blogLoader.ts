@@ -26,7 +26,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-prwtes-5-asterwn-kritikes',
     'airbnb-cleaning-101-teliotita',
     'airbnb-telio-krevati',
-    'airbnb-optimize-automate-communication'
+    'airbnb-optimize-automate-communication',
+    'airbnb-experiences-guide'
   ];
 };
 
