@@ -106,11 +106,11 @@ export const post: BlogPost = {
    - Προσωπικό μήνυμα καλωσορίσματος.  
    - Σαφή οδηγίες check-in/check-out.  
 
-2. **[Προσφέρετε άριστες amenities και essentials](/blog/airbnb-amenities-essentials)**  
+2. [Προσφέρετε άριστες amenities και essentials](/blog/airbnb-amenities-essentials)
    - Καθαριότητα, άνεση και πλήρης εξοπλισμός.  
    - Προσθήκη μικρών extras όπως καφές, τσάι, τοπικές πληροφορίες.  
 
-3. **[Σαφείς και ελκυστικές περιγραφές](/blog/airbnb-perigrafi-kalyteres-praktikes)**  
+3. [Σαφείς και ελκυστικές περιγραφές](/blog/airbnb-perigrafi-kalyteres-praktikes)
    - Ακριβείς πληροφορίες για χώρο και ανέσεις μειώνουν τις απογοητεύσεις.
 
 4. **Γρήγορη και φιλική επικοινωνία**  
