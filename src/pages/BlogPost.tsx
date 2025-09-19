@@ -132,20 +132,72 @@ const BlogPost = () => {
 
   // Convert markdown-like content to HTML (basic implementation)
   const formatContent = (content: string) => {
+    // Helper function to parse links in text
+    const parseLinks = (text: string) => {
+      const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+      const parts = [];
+      let lastIndex = 0;
+      let match;
+
+      while ((match = linkRegex.exec(text)) !== null) {
+        const [fullMatch, linkText, url] = match;
+        
+        // Add text before the link
+        if (match.index > lastIndex) {
+          parts.push(text.substring(lastIndex, match.index));
+        }
+        
+        // Determine if it's an internal or external link
+        const isInternal = url.startsWith('/') || url.startsWith('#') || url.includes('kefistays.gr');
+        
+        if (isInternal) {
+          parts.push(
+            <Link 
+              key={match.index}
+              to={url.replace('https://kefistays.gr', '')} 
+              className="text-primary hover:text-primary/80 underline font-medium transition-colors"
+            >
+              {linkText}
+            </Link>
+          );
+        } else {
+          parts.push(
+            <a 
+              key={match.index}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 underline font-medium transition-colors"
+            >
+              {linkText}
+            </a>
+          );
+        }
+        
+        lastIndex = match.index + fullMatch.length;
+      }
+      
+      // Add remaining text
+      if (lastIndex < text.length) {
+        parts.push(text.substring(lastIndex));
+      }
+      
+      return parts.length > 1 ? parts : text;
+    };
+
     return content
       .split('\n')
       .map((line, index) => {
         // Headers
         if (line.startsWith('# ')) {
-          return <h1 key={index} className="text-3xl font-bold text-gray-900 mt-8 mb-4">{line.substring(2)}</h1>;
+          return <h1 key={index} className="text-3xl font-bold text-gray-900 mt-8 mb-4">{parseLinks(line.substring(2))}</h1>;
         }
         if (line.startsWith('## ')) {
-          return <h2 key={index} className="text-2xl font-bold text-gray-900 mt-6 mb-3">{line.substring(3)}</h2>;
+          return <h2 key={index} className="text-2xl font-bold text-gray-900 mt-6 mb-3">{parseLinks(line.substring(3))}</h2>;
         }
         if (line.startsWith('### ')) {
-          return <h3 key={index} className="text-1xl font-bold text-gray-900 mt-6 mb-2">{line.substring(4)}</h3>;
+          return <h3 key={index} className="text-xl font-bold text-gray-900 mt-6 mb-2">{parseLinks(line.substring(4))}</h3>;
         }
-        
         
         // Images
         const imageMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
@@ -163,14 +215,19 @@ const BlogPost = () => {
           );
         }
         
-        // Bold text
-        const boldText = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-        
         // Lists
         if (line.startsWith('- ')) {
+          const listContent = line.substring(2);
+          const boldText = listContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          const linksAndBold = parseLinks(boldText);
+          
           return (
             <li key={index} className="text-gray-700 mb-2 ml-6 list-disc">
-              <span dangerouslySetInnerHTML={{ __html: boldText.substring(2) }} />
+              {typeof linksAndBold === 'string' ? (
+                <span dangerouslySetInnerHTML={{ __html: linksAndBold }} />
+              ) : (
+                linksAndBold
+              )}
             </li>
           );
         }
@@ -182,9 +239,16 @@ const BlogPost = () => {
         
         // Regular paragraphs
         if (line.trim() && !line.startsWith('#') && !line.startsWith('-') && !line.startsWith('*')) {
+          const boldText = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          const linksAndBold = parseLinks(boldText);
+          
           return (
             <p key={index} className="text-gray-700 mb-4 leading-relaxed">
-              <span dangerouslySetInnerHTML={{ __html: boldText }} />
+              {typeof linksAndBold === 'string' ? (
+                <span dangerouslySetInnerHTML={{ __html: linksAndBold }} />
+              ) : (
+                linksAndBold
+              )}
             </p>
           );
         }
