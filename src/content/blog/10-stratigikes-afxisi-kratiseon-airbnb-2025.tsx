@@ -4,7 +4,7 @@ export const post: BlogPost = {
   // Basic Information
   id: "1",
   title: "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024",
-  slug: "10-stratigikes-afxisi-kratiseon-airbnb-2024",
+  slug: "10-stratigikes-afxisi-kratiseon-airbnb-2025",
   excerpt: "Ανακάλυψε τις πιο αποτελεσματικές στρατηγικές που χρησιμοποιούν οι επιτυχημένοι hosts για να αυξήσουν τα έσοδά τους στο Airbnb και να ξεχωρίσουν από τον ανταγωνισμό.",
   
   // SEO Optimization

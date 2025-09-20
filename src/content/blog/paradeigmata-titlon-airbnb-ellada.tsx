@@ -26,8 +26,8 @@ export const post: BlogPost = {
 
   // Article Information
   author: "Kefistays Team",
-  publishedAt: "2025-09-19T10:00:00.000Z",
-  updatedAt: "2025-09-19T10:00:00.000Z",
+  publishedAt: "2025-09-20T10:00:00.000Z",
+  updatedAt: "2025-09-20T10:00:00.000Z",
   readTime: 9,
 
   // Featured Image
@@ -64,8 +64,8 @@ export const post: BlogPost = {
       },
       "url": "https://kefistays.gr"
     },
-    "datePublished": "2025-09-19T10:00:00.000Z",
-    "dateModified": "2025-09-19T10:00:00.000Z",
+    "datePublished": "2025-09-20T10:00:00.000Z",
+    "dateModified": "2025-09-20T10:00:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://kefistays.gr/blog/paradeigmata-titlon-airbnb-ellada"
