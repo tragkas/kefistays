@@ -2,7 +2,7 @@ import { BlogPost } from "@/types/blog";
 
 export const post: BlogPost = {
   // Basic Information
-  id: "19",
+  id: "12",
   title: "Airbnb Experiences: Τι είναι, πώς λειτουργούν και πώς να τα εκμεταλλευτείς ως host",
   slug: "airbnb-experiences-guide",
   excerpt:

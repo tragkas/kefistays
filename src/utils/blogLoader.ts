@@ -27,7 +27,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-cleaning-101-teliotita',
     'airbnb-telio-krevati',
     'airbnb-optimize-automate-communication',
-    'airbnb-experiences-guide'
+    'airbnb-experiences-guide',
+    'paradeigmata-titlon-airbnb-ellada'
   ];
 };
 
