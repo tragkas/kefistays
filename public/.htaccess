@@ -32,6 +32,11 @@
     <FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|avif|ico|pdf|flv|swf)$">
         Header set Cache-Control "max-age=31536000, public, immutable"
     </FilesMatch>
+    
+    # External scripts caching
+    <LocationMatch "(https://tally\.so/widgets/embed\.js|https://cdn\.gpteng\.co/gptengineer\.js)">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </LocationMatch>
 </IfModule>
 
 # Security headers

@@ -7,8 +7,8 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://tally.so">
-    <link rel="preconnect" href="https://cdn.gpteng.co">
+    <link rel="preconnect" href="https://tally.so" crossorigin>
+    <link rel="preconnect" href="https://cdn.gpteng.co" crossorigin>
     
     <!-- Preload critical font -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -82,8 +82,9 @@
     </script>
 
     <!-- CLARITY + silktide BANNER -->
-<!-- Silktide Consent Manager CSS -->
-<link rel="stylesheet" id="silktide-consent-manager-css" href="/silktide-consent-manager.css">
+<!-- Silktide Consent Manager CSS - Preload for performance -->
+<link rel="preload" href="/silktide-consent-manager.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/silktide-consent-manager.css"></noscript>
 
 <!-- Silktide Consent Manager JS -->
 <script src="/silktide-consent-manager.js" defer></script>
