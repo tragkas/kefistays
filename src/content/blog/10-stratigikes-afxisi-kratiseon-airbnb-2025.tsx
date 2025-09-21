@@ -3,14 +3,14 @@ import { BlogPost } from "@/types/blog";
 export const post: BlogPost = {
   // Basic Information
   id: "1",
-  title: "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024",
+  title: "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2025",
   slug: "10-stratigikes-afxisi-kratiseon-airbnb-2025",
   excerpt: "Ανακάλυψε τις πιο αποτελεσματικές στρατηγικές που χρησιμοποιούν οι επιτυχημένοι hosts για να αυξήσουν τα έσοδά τους στο Airbnb και να ξεχωρίσουν από τον ανταγωνισμό.",
   
   // SEO Optimization
   seo: {
-    metaTitle: "10 Στρατηγικές για Περισσότερες Κρατήσεις Airbnb 2024 | Kefistays",
-    metaDescription: "Ανακάλυψε τις κορυφαίες στρατηγικές που χρησιμοποιούν οι επιτυχημένοι Airbnb hosts για να αυξήσουν τις κρατήσεις και τα έσοδά τους το 2024. Οδηγός από τους ειδικούς της Kefistays.",
+    metaTitle: "10 Στρατηγικές για Περισσότερες Κρατήσεις Airbnb 2025 | Kefistays",
+    metaDescription: "Ανακάλυψε τις κορυφαίες στρατηγικές που χρησιμοποιούν οι επιτυχημένοι Airbnb hosts για να αυξήσουν τις κρατήσεις και τα έσοδά τους το 2025. Οδηγός από τους ειδικούς της Kefistays.",
     keywords: [
       "airbnb στρατηγικές", 
       "αύξηση κρατήσεων airbnb", 
@@ -23,8 +23,8 @@ export const post: BlogPost = {
       "airbnb εισόδημα",
       "airbnb βελτιστοποίηση"
     ],
-    canonical: "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024",
-    focusKeyword: "airbnb στρατηγικές 2024"
+    canonical: "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2025",
+    focusKeyword: "airbnb στρατηγικές 2025"
   },
 
   // Article Information
@@ -36,7 +36,7 @@ export const post: BlogPost = {
   // Featured Image
   featuredImage: {
     url: "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop",
-    alt: "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024 - Οδηγός Kefistays",
+    alt: "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2025 - Οδηγός Kefistays",
     width: 1200,
     height: 630
   },
@@ -49,9 +49,9 @@ export const post: BlogPost = {
   schema: {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024",
+    "headline": "10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2025",
     "description": "Ανακάλυψε τις πιο αποτελεσματικές στρατηγικές που χρησιμοποιούν οι επιτυχημένοι hosts για να αυξήσουν τα έσοδά τους στο Airbnb",
-    "image": "https://kefistays.gr/blog/airbnb-strategies-2024.jpg",
+    "image": "https://kefistays.gr/blog/airbnb-strategies-2025.jpg",
     "author": {
       "@type": "Organization",
       "name": "Kefistays Team",
@@ -70,7 +70,7 @@ export const post: BlogPost = {
     "dateModified": "2025-08-23T15:30:00.000Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2024"
+      "@id": "https://kefistays.gr/blog/10-stratigikes-afxisi-kratiseon-airbnb-2025"
     },
     "articleSection": "Στρατηγικές Airbnb",
     "keywords": "airbnb στρατηγικές, αύξηση κρατήσεων airbnb, airbnb marketing, βραχυχρόνια μίσθωση"
@@ -88,7 +88,7 @@ export const post: BlogPost = {
 
   // Content with Proper Heading Structure (H1, H2, H3)
   content: `
-# 10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2024
+# 10 Στρατηγικές για να Αυξήσεις τις Κρατήσεις στο Airbnb το 2025
 
 Το **Airbnb** έχει γίνει μια από τις πιο δημοφιλείς πλατφόρμες για βραχυχρόνια μίσθωση, αλλά ο ανταγωνισμός αυξάνεται συνεχώς. Για να ξεχωρίσετε και να αυξήσετε τις κρατήσεις σας, χρειάζεστε μια στρατηγική προσέγγιση που συνδυάζει τις καλύτερες πρακτικές του κλάδου.
 
@@ -196,7 +196,7 @@ export const post: BlogPost = {
 
 ---
 
-*Το άρθρο αυτό ενημερώθηκε τελευταία φορά στις 23 Αυγούστου 2024. Για περισσότερες συμβουλές και στρατηγικές, επισκεφθείτε το blog μας.*
+*Το άρθρο αυτό ενημερώθηκε τελευταία φορά στις 23 Αυγούστου 2025. Για περισσότερες συμβουλές και στρατηγικές, επισκεφθείτε το blog μας.*
   `
 };
 
