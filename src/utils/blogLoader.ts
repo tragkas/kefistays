@@ -28,7 +28,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-telio-krevati',
     'airbnb-optimize-automate-communication',
     'airbnb-experiences-guide',
-    'paradeigmata-titlon-airbnb-ellada'
+    'paradeigmata-titlon-airbnb-ellada',
+    'airbnb-fotografies-monois-sas'
   ];
 };
 
