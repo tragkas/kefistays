@@ -6,11 +6,17 @@ import { BlogPost } from "@/types/blog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import { Calendar, Clock, User } from "lucide-react";
+import { Progress } from "@/components/ui/progress";
+import { Checkbox } from "@/components/ui/checkbox";
+import { useReadingProgress } from "@/hooks/useReadingProgress";
+import { Calendar, Clock, User, Check } from "lucide-react";
 
 const Blog = () => {
   const [posts, setPosts] = React.useState<BlogPost[]>([]);
   const [loading, setLoading] = React.useState(true);
+  
+  // Reading progress tracking
+  const { progress, togglePostRead, isPostRead } = useReadingProgress(posts.length);
 
   React.useEffect(() => {
     const loadPosts = async () => {
@@ -100,10 +106,31 @@ const Blog = () => {
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                   Blog & Συμβουλές
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-gray-600 leading-relaxed mb-8">
                   Ανακαλύψτε τις καλύτερες στρατηγικές, συμβουλές και insights για να 
                   αυξήσετε τις κρατήσεις στο Airbnb και να βελτιώσετε την επιχείρησή σας.
                 </p>
+                
+                {/* Reading Progress */}
+                {!loading && posts.length > 0 && (
+                  <div className="max-w-md mx-auto">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm text-muted-foreground">
+                        Πρόοδος ανάγνωσης
+                      </span>
+                      <span className="text-sm font-medium text-primary">
+                        {Math.round((progress * posts.length) / 100)} από {posts.length} άρθρα
+                      </span>
+                    </div>
+                    <Progress 
+                      value={progress} 
+                      className="h-2"
+                    />
+                    <p className="text-xs text-muted-foreground text-center mt-1">
+                      {progress}% ολοκληρωμένο
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </section>
@@ -136,8 +163,28 @@ const Blog = () => {
                   {posts.map((post) => (
                     <article 
                       key={post.id}
-                      className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                      className={`bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 relative ${
+                        isPostRead(post.slug) ? 'opacity-90' : ''
+                      }`}
                     >
+                      {/* Read Toggle */}
+                      <div className="absolute top-3 right-3 z-10">
+                        <div 
+                          className={`flex items-center justify-center w-8 h-8 rounded-full cursor-pointer transition-all duration-200 ${
+                            isPostRead(post.slug) 
+                              ? 'bg-primary text-primary-foreground shadow-md' 
+                              : 'bg-white/90 text-gray-400 hover:bg-white hover:text-primary border border-gray-200'
+                          }`}
+                          onClick={() => togglePostRead(post.slug)}
+                        >
+                          {isPostRead(post.slug) ? (
+                            <Check className="w-4 h-4" />
+                          ) : (
+                            <div className="w-4 h-4 border-2 border-current rounded-sm" />
+                          )}
+                        </div>
+                      </div>
+
                       <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden mb-4">
                         <img 
                           src={post.featuredImage.url} 
