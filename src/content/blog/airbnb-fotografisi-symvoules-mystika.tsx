@@ -113,11 +113,11 @@ export const post: BlogPost = {
 
 ## Τι λέει το Airbnb ως επίσημη οδηγία
 
-Τα φωτογραφικά αρχεία πρέπει να έχουν τουλάχιστον ([1024×683 pixels](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com)).  
-Οριζόντιο/landscape προσανατολισμό προτιμά το Airbnb, γιατί οι πλατφόρμες προβολής (search results, listing gallery) χρησιμοποιούν κυρίως ([αυτό το format](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com)).  
-Φωτογραφίες με φυσικό φως όταν είναι δυνατόν — ανοιχτές κουρτίνες, παράθυρα — και χρήση φωτισμού εσωτερικά αν απαιτείται ([airbnb.com](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com)).  
+Τα φωτογραφικά αρχεία πρέπει να έχουν τουλάχιστον [1024×683 pixels](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com).  
+Οριζόντιο/landscape προσανατολισμό προτιμά το Airbnb, γιατί οι πλατφόρμες προβολής (search results, listing gallery) χρησιμοποιούν κυρίως [αυτό το format](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com).  
+Φωτογραφίες με φυσικό φως όταν είναι δυνατόν — ανοιχτές κουρτίνες, παράθυρα — και χρήση [φωτισμού εσωτερικά αν απαιτείται](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com).  
 Να παρουσιάζεις ([εσωτερικούς και εξωτερικούς χώρους](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com)), καθώς και τη γύρω περιοχή.  
-Προσοχή στην σειρά και την ολοκληρωμένη αφήγηση μέσω των φωτογραφιών — ο επισκέπτης να καταλάβει το layout, τις δυνατότητες, ([τι ξεχωρίζει το κατάλυμά σου](https://touchstay.com/blog/airbnb-photos-a-professional-guide?utm_source=chatgpt.com)).
+Προσοχή στην σειρά και την ολοκληρωμένη αφήγηση μέσω των φωτογραφιών — ο επισκέπτης να καταλάβει το layout, τις δυνατότητες, [τι ξεχωρίζει το κατάλυμά σου](https://touchstay.com/blog/airbnb-photos-a-professional-guide?utm_source=chatgpt.com).
 
 ---
 
@@ -154,19 +154,19 @@ export const post: BlogPost = {
 Φωτεινότητα, αντίθεση, σκιάσεις — προσοχή ώστε να αναδεικνύουν τον χώρο, όχι να τον ψεύτικα λευκαίνουν ή υπερ-κορεσμένα χρώματα.  
 Διόρθωσε προοπτική αν χρειάζεται.  
 Απόφυγε υπερβολικά φίλτρα ή HDR που δημιουργεί μη φυσικό αποτέλεσμα.  
-Επίλεξε τύπο αρχείου JPEG για καλή ([ισορροπία ποιότητας/μεγέθους](https://www.photoandvideoedits.com/blog/editing-airbnb-photos?utm_source=chatgpt.com)).
+Επίλεξε τύπο αρχείου JPEG για καλή [ισορροπία ποιότητας/μεγέθους](https://www.photoandvideoedits.com/blog/editing-airbnb-photos?utm_source=chatgpt.com).
 
 ### 6. Τεχνικές προδιαγραφές (Airbnb Requirements)
 
-Ελάχιστη ανάλυση: ([1024×683 pixels](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com)).  
-Αναλογία διαστάσεων περίπου 3:2, ώστε να μην ([κοπούν ή παραμορφωθούν](https://completehospitalitymanagement.com/airbnb-photo-requirements/?utm_source=chatgpt.com)).  
-Μέγεθος αρχείου: όσο μικρότερο για γρήγορο φόρτωμα, αλλά να μην χάνει η εικόνα την ευκρίνειά της ([(το Airbnb υποστηρίζει μέχρι ~10 MB)](https://www.airbnb.com/resources/hosting-homes/a/how-to-take-great-photos-for-your-listing-687?utm_source=chatgpt.com)).
+Ελάχιστη ανάλυση: [1024×683 pixels](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com).  
+Αναλογία διαστάσεων περίπου 3:2, ώστε να μην [κοπούν ή παραμορφωθούν](https://completehospitalitymanagement.com/airbnb-photo-requirements/?utm_source=chatgpt.com).  
+Μέγεθος αρχείου: όσο μικρότερο για γρήγορο φόρτωμα, αλλά να μην χάνει η εικόνα την ευκρίνειά της [(το Airbnb υποστηρίζει μέχρι ~10 MB)](https://www.airbnb.com/resources/hosting-homes/a/how-to-take-great-photos-for-your-listing-687?utm_source=chatgpt.com).
 
 ### 7. Εξωτερικοί χώροι, γύρω περιοχή & εμπειρία
 
 Αν υπάρχει μπαλκόνι, ταράτσα, κήπος, πισίνα — αξίζει μεγάλη φωτογράφιση. Οι επισκέπτες θέλουν να δουν το εξωτερικό περιβάλλον.  
 Φωτογραφίες της γειτονιάς: κοντινά καφέ, σημεία ενδιαφέροντος, θέα — αν προσθέτουν προστιθέμενη αξία.  
-Αν το κατάλυμα παρέχει ειδικές ανέσεις (accessibility), φωτογράφησε τα features (π.χ. ράμπες, ευκολίες). Airbnb ενθαρρύνει την ([προβολή τέτοιων στοιχείων](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com)).
+Αν το κατάλυμα παρέχει ειδικές ανέσεις (accessibility), φωτογράφησε τα features (π.χ. ράμπες, ευκολίες). Airbnb ενθαρρύνει την [προβολή τέτοιων στοιχείων](https://www.airbnb.com/help/article/746?utm_source=chatgpt.com).
 
 ---
 
@@ -182,7 +182,7 @@ export const post: BlogPost = {
 
 ## Πόσες & Ποιες φωτογραφίες να ανεβάσεις
 
-Ιδανικά ([20-30 φωτογραφίες](https://www.airdna.co/blog/airbnb-photography?utm_source=chatgpt.com)) που να καλύπτουν όλους τους χώρους (σαλόνι, κουζίνα, υπνοδωμάτια, μπάνια, εξωτερικούς χώρους).  
+Ιδανικά [20-30 φωτογραφίες](https://www.airdna.co/blog/airbnb-photography?utm_source=chatgpt.com) που να καλύπτουν όλους τους χώρους (σαλόνι, κουζίνα, υπνοδωμάτια, μπάνια, εξωτερικούς χώρους).  
 Τουλάχιστον μία φωτογραφία εξωτερική και φωτογραφία της πρόσοψης/εισόδου.  
 Ανέφερε χαρακτηριστικά/amenities μέσω φωτογραφιών: air condition, θέρμανση, κουζίνα πλήρης, πισίνα κλπ.
 
@@ -194,7 +194,7 @@ export const post: BlogPost = {
 
 Πότε να το κάνεις μόνος/μόνη (DIY): έχεις καλό τηλέφωνο/κάμερα, διατεθειμένος να αφιερώσεις χρόνο στο staging και την επεξεργασία, αν δεν έχεις μεγάλο budget — με σωστό φωτισμό και προσοχή στις τεχνικές, μπορείς να έχεις πολύ καλό αποτέλεσμα.  
 
-Airbnb προσφέρει και υπηρεσία ([Professional Photography](https://www.airbnb.com/e/pro-photography?utm_source=chatgpt.com)) σε επιλεγμένες περιοχές.
+Airbnb προσφέρει και υπηρεσία [Professional Photography](https://www.airbnb.com/e/pro-photography?utm_source=chatgpt.com) σε επιλεγμένες περιοχές.
 
 ---
 
