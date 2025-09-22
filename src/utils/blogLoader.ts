@@ -29,7 +29,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-optimize-automate-communication',
     'airbnb-experiences-guide',
     'paradeigmata-titlon-airbnb-ellada',
-    'airbnb-fotografies-monois-sas'
+    'airbnb-fotografies-monois-sas',
+    '10-paradeigmata-titlon-airbnb-krathseis'
   ];
 };
 
