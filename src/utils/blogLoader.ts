@@ -30,7 +30,8 @@ const getAvailableSlugs = (): string[] => {
     'airbnb-experiences-guide',
     'paradeigmata-titlon-airbnb-ellada',
     'airbnb-fotografies-monois-sas',
-    '10-paradeigmata-titlon-airbnb-krathseis'
+    '10-paradeigmata-titlon-airbnb-krathseis',
+    'airbnb-amenities-guide'
   ];
 };
 
