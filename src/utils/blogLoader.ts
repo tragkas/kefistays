@@ -31,7 +31,8 @@ const getAvailableSlugs = (): string[] => {
     'paradeigmata-titlon-airbnb-ellada',
     'airbnb-fotografies-monois-sas',
     '10-paradeigmata-titlon-airbnb-krathseis',
-    'airbnb-amenities-guide'
+    'airbnb-amenities-guide',
+    'top-5-paroxes-airbnb-ellada'
   ];
 };
 
