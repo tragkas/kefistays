@@ -33,7 +33,8 @@ const getAvailableSlugs = (): string[] => {
     '10-paradeigmata-titlon-airbnb-krathseis',
     'airbnb-amenities-guide',
     'top-5-paroxes-airbnb-ellada',
-    'airbnb-welcome-arrival-experience'
+    'airbnb-welcome-arrival-experience',
+    'syxna-lathei-idioktiton-airbnb-ellada'
   ];
 };
 
